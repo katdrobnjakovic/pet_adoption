@@ -1,0 +1,21 @@
+<h1> <%= @animal_post.title %></h1> 
+
+<p>
+	Body: <%= @animal_post.body %>
+</p>
+
+<p>
+	ID: <%= @animal_post.id %>
+</p>
+
+<p>
+	Updated: <%= @animal_post.updated_at %>
+</p>
+
+<p>
+	Created: <%= @animal_post.created_at %>
+</p>
+
+<%= link_to "Edit Animal Post with ID:  #{@animal_post.id}", edit_animal_post_path(@animal_post) %>
+
+<%= link_to "Back to All Animals", animal_posts_path %>

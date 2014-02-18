@@ -1,0 +1,2 @@
+module AnimalPostsHelper
+end
