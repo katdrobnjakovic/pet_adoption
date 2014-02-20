@@ -1291,3 +1291,2366 @@ DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rail
   Rendered animal_posts/_animal_post.html.erb (1.5ms)
   Rendered animal_posts/index.html.erb within layouts/application (4.2ms)
 Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.6ms)
+  [1m[36m (60.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (5.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAnimalPosts (20140217235221)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (17.0ms)[0m  [1mCREATE TABLE "animal_posts" ("id" serial primary key, "title" character varying(255), "body" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140217235221"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/home" for 127.0.0.1 at 2014-02-19 14:13:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (67.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (253.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-19 14:13:44 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 107ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get" for 127.0.0.1 at 2014-02-19 14:13:50 -0500
+
+ActionController::RoutingError (No route matches [GET] "/get"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (66.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 14:13:59 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+  Rendered collection (1.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 3658ms (Views: 3651.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 14:14:03 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 14:14:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 14:14:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 14:14:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 14:14:03 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 14:14:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 14:14:03 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:37:43 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1954.1ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered collection (34.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (2491.1ms)
+Completed 200 OK in 3408ms (Views: 1047.1ms | ActiveRecord: 1954.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 21:37:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 21:37:50 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 21:37:50 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 21:37:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 21:37:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 21:37:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 21:37:50 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:41:42 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+  Rendered collection (0.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 149ms (Views: 66.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 21:41:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 21:41:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 21:41:43 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 21:41:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 21:41:43 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 21:41:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 21:41:43 -0500
+
+
+Started GET "/animal_posts/new" for 127.0.0.1 at 2014-02-19 21:42:06 -0500
+Processing by AnimalPostsController#new as HTML
+  Rendered animal_posts/_form.html.erb (767.0ms)
+  Rendered animal_posts/new.html.erb within layouts/application (841.0ms)
+Completed 200 OK in 2156ms (Views: 893.1ms | ActiveRecord: 1163.1ms)
+
+
+Started POST "/animal_posts" for 127.0.0.1 at 2014-02-19 21:42:15 -0500
+Processing by AnimalPostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pYVVJzz8SuSqeTsQQ0cQxKfX0TXODXHf7DTl9Eo4GIg=", "animal_post"=>{"title"=>"fluffy", "body"=>"is fluffy"}, "commit"=>"Create Animal post"}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (597.0ms)[0m  INSERT INTO "animal_posts" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["body", "is fluffy"], ["created_at", Thu, 20 Feb 2014 02:42:16 UTC +00:00], ["title", "fluffy"], ["updated_at", Thu, 20 Feb 2014 02:42:16 UTC +00:00]]
+  [1m[36m (146.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/animal_posts/1
+Completed 302 Found in 944ms (ActiveRecord: 810.0ms)
+
+
+Started GET "/animal_posts/1" for 127.0.0.1 at 2014-02-19 21:42:16 -0500
+Processing by AnimalPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAnimalPost Load (102.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts" WHERE "animal_posts"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered animal_posts/show.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 229ms (Views: 72.0ms | ActiveRecord: 102.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 21:42:17 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 21:42:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 21:42:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 21:42:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 21:42:17 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 21:42:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 21:42:17 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:42:19 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (0.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered animal_posts/_animal_post.html.erb (113.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (147.0ms)
+Completed 500 Internal Server Error in 174ms
+
+ActionView::Template::Error (undefined method `image' for #<AnimalPost:0x0000000427acc8>):
+    1: 
+    2: <div class ="animal-post">
+    3: 	<div class="image">
+    4: 		<%= animal_post.image %>
+    5: 	</div>
+    6: <div class= "actions">
+    7: 	<%= link_to animal_post.title, animal_post %>
+  app/views/animal_posts/_animal_post.html.erb:4:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34937980'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34245120'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (65.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (174.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:42:20 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `image' for #<AnimalPost:0x00000004282888>):
+    1: 
+    2: <div class ="animal-post">
+    3: 	<div class="image">
+    4: 		<%= animal_post.image %>
+    5: 	</div>
+    6: <div class= "actions">
+    7: 	<%= link_to animal_post.title, animal_post %>
+  app/views/animal_posts/_animal_post.html.erb:4:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34916940'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_35079340'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:42:43 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered animal_posts/_animal_post.html.erb (34.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (61.0ms)
+Completed 500 Internal Server Error in 72ms
+
+ActionView::Template::Error (undefined method `image' for #<AnimalPost:0x00000006e56c48>):
+    1: 
+    2: <div class ="animal-post">
+    3: 	<div class="image">
+    4: 		<%= animal_post.image %>
+    5: 	</div>
+    6: <div class= "actions">
+    7: 	<%= link_to animal_post.title, animal_post %>
+  app/views/animal_posts/_animal_post.html.erb:4:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34916940'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_35079340'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (67.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:42:45 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `image' for #<AnimalPost:0x00000007432900>):
+    1: 
+    2: <div class ="animal-post">
+    3: 	<div class="image">
+    4: 		<%= animal_post.image %>
+    5: 	</div>
+    6: <div class= "actions">
+    7: 	<%= link_to animal_post.title, animal_post %>
+  app/views/animal_posts/_animal_post.html.erb:4:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34916940'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_35079340'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (68.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:48:10 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (38.0ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (undefined method `image' for #<AnimalPost:0x00000004213c08>):
+    1: 
+    2: <div class ="animal-post">
+    3: 	<div class="image">
+    4: 		<%= animal_post.image %>
+    5: 	</div>
+    6: <div class= "actions">
+    7: 	<%= link_to animal_post.title, animal_post %>
+  app/views/animal_posts/_animal_post.html.erb:4:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34916940'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_35079340'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:48:15 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (0.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34769820 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:8)
+  Rendered animal_posts/_animal_post.html.erb (50.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 70ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 21:48:15 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 21:48:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 21:48:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 21:48:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 21:48:15 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 21:48:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 21:48:15 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:52:33 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34867360 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:27)
+  Rendered animal_posts/_animal_post.html.erb (18.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 21:52:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 21:52:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 21:52:34 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 21:52:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 21:52:34 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 21:52:34 -0500
+
+
+Started GET "/scripts/expand.js" for 127.0.0.1 at 2014-02-19 21:52:34 -0500
+
+ActionController::RoutingError (No route matches [GET] "/scripts/expand.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (132.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 21:52:34 -0500
+
+
+Started GET "/animal_posts/new" for 127.0.0.1 at 2014-02-19 21:52:44 -0500
+Processing by AnimalPostsController#new as HTML
+  Rendered animal_posts/_form.html.erb (5.0ms)
+  Rendered animal_posts/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animal_posts/1" for 127.0.0.1 at 2014-02-19 21:52:48 -0500
+Processing by AnimalPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts" WHERE "animal_posts"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered animal_posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:52:50 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (0.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_44219980 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:27)
+  Rendered animal_posts/_animal_post.html.erb (2.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/expand.js" for 127.0.0.1 at 2014-02-19 21:52:50 -0500
+
+ActionController::RoutingError (No route matches [GET] "/scripts/expand.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (65.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:53:31 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34850180 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:22)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 21:53:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 21:53:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 21:53:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 21:53:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 21:53:31 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 21:53:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 21:53:31 -0500
+
+
+Started GET "/scripts/expand.js" for 127.0.0.1 at 2014-02-19 21:53:31 -0500
+
+ActionController::RoutingError (No route matches [GET] "/scripts/expand.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (115.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:54:50 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34807360 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:22)
+  Rendered animal_posts/_animal_post.html.erb (2.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 21:54:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 21:54:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 21:54:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 21:54:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 21:54:50 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 21:54:51 -0500
+
+
+Started GET "/scripts/expand.js" for 127.0.0.1 at 2014-02-19 21:54:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/scripts/expand.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (121.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 21:54:51 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:57:18 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34870020 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:220)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 21:57:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 21:57:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 21:57:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 21:57:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 21:57:19 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 21:57:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 21:57:19 -0500
+
+
+Started GET "/scripts/expand.js" for 127.0.0.1 at 2014-02-19 21:57:19 -0500
+
+ActionController::RoutingError (No route matches [GET] "/scripts/expand.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (114.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 21:58:58 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_35069600 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:219)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 21:58:59 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 21:58:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 21:58:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 21:58:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 21:58:59 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 21:58:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 21:58:59 -0500
+
+
+Started GET "/scripts/expand.js" for 127.0.0.1 at 2014-02-19 21:58:59 -0500
+
+ActionController::RoutingError (No route matches [GET] "/scripts/expand.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (94.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:00:45 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34721960 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:199)
+  Rendered animal_posts/_animal_post.html.erb (20.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:00:45 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:00:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:00:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:00:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:00:45 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:00:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:00:45 -0500
+
+
+Started GET "/scripts/expand.js" for 127.0.0.1 at 2014-02-19 22:00:45 -0500
+
+ActionController::RoutingError (No route matches [GET] "/scripts/expand.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (38.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (178.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:01:05 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34834780 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:209)
+  Rendered animal_posts/_animal_post.html.erb (33.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:01:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:01:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:01:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:01:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:01:05 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:01:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:01:05 -0500
+
+
+Started GET "/scripts/expand.js" for 127.0.0.1 at 2014-02-19 22:01:05 -0500
+
+ActionController::RoutingError (No route matches [GET] "/scripts/expand.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (94.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:02:26 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34801160 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:213)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:02:27 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:02:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:27 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:27 -0500
+
+
+Started GET "/scripts/expand.js" for 127.0.0.1 at 2014-02-19 22:02:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/scripts/expand.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (65.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:02:29 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34801160 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:213)
+  Rendered animal_posts/_animal_post.html.erb (1.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 62ms (Views: 59.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:02:29 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:29 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:02:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:29 -0500
+
+
+Started GET "/scripts/expand.js" for 127.0.0.1 at 2014-02-19 22:02:29 -0500
+
+ActionController::RoutingError (No route matches [GET] "/scripts/expand.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (109.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:02:47 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_21006740 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:10)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:02:47 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:02:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:47 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:02:47 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:08:51 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (0.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34737000 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:11)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:08:51 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:08:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:08:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:08:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:08:51 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:08:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:08:51 -0500
+
+
+Started GET "/animal_posts/1" for 127.0.0.1 at 2014-02-19 22:08:58 -0500
+Processing by AnimalPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts" WHERE "animal_posts"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered animal_posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/animal_posts/1" for 127.0.0.1 at 2014-02-19 22:09:13 -0500
+Processing by AnimalPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts" WHERE "animal_posts"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered animal_posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:10:11 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (0.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34918800 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:13)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:10:11 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:10:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:10:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:10:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:10:11 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:10:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:10:11 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:10:35 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34692060 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:13)
+  Rendered animal_posts/_animal_post.html.erb (2.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:10:36 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:10:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:10:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:10:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:10:36 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:10:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:10:36 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:26:35 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34868300 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:9)
+  Rendered animal_posts/_animal_post.html.erb (5.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:26:36 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:26:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:26:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:26:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:26:36 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:26:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:26:36 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:28:01 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7: <div class= "actions">
+     8: 
+     9: 
+    10: <% @animalPost.each do |zone| %>
+    11:         <p><%= link_to_function animal_post.title, "$('#show_zone').toggle()" %></p>
+    12:         <ul id = "show_zone">
+    13:                 <% zone.areas.each do |area| %>
+  app/views/animal_posts/_animal_post.html.erb:10:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34725200'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34232840'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:28:42 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (0.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7: <div class= "actions">
+     8: 
+     9: 
+    10: <% @animal_post.each do |zone| %>
+    11:         <p><%= link_to_function animal_post.title, "$('#show_zone').toggle()" %></p>
+    12:         <ul id = "show_zone">
+    13:                 <% zone.areas.each do |area| %>
+  app/views/animal_posts/_animal_post.html.erb:10:in `_app_views_animal_posts__animal_post_html_erb__1195478860_23614860'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34232840'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:28:51 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+ERROR: compiling _app_views_animal_posts__animal_post_html_erb__1195478860_34901900 RAISED C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:10: syntax error, unexpected keyword_do, expecting keyword_end
+'; @animal_post do |zone| 
+                  ^
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input
+Function body:           def _app_views_animal_posts__animal_post_html_erb__1195478860_34901900(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "animal_posts/_animal_post";_old_output_buffer = @output_buffer;animal_post = animal_post = local_assigns[:animal_post];animal_post_counter = animal_post_counter = local_assigns[:animal_post_counter];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='
+<div class ="animal-post">
+';
+
+
+@output_buffer.safe_append='
+<div class= "actions">
+
+
+'; @animal_post do |zone| 
+@output_buffer.safe_append='        <p>';@output_buffer.append=( link_to_function animal_post.title, "$('#show_zone').toggle()" );@output_buffer.safe_append='</p>
+        <ul id = "show_zone">
+';                 zone.areas.each do |area| 
+@output_buffer.safe_append='                  <li>';@output_buffer.append=( link_to_function animal_post.body, "new Effect.toggle('#show_area')" );@output_buffer.safe_append='
+';@output_buffer.safe_append='               </li>
+';                end 
+@output_buffer.safe_append='        </ul>
+'; end 
+@output_buffer.safe_append='
+
+	';@output_buffer.append=( link_to animal_post.title, animal_post );@output_buffer.safe_append='
+';@output_buffer.safe_append='	';@output_buffer.append=( link_to "destroy",						 
+				animal_post, method: :delete,  
+				confirm: "Are you sure you want to delete this news post? " );@output_buffer.safe_append='
+';@output_buffer.safe_append='				<!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
+</div>
+</div>
+</li>
+
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:399:in `block in collection_with_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:395:in `map'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:395:in `collection_with_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:291:in `render_collection'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:275:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:274:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34232840'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:143:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__125349047__process_action__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__1707191501__call__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered animal_posts/_animal_post.html.erb (5.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:10: syntax error, unexpected keyword_do, expecting keyword_end
+'; @animal_post do |zone| 
+                  ^
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input):
+     7: <div class= "actions">
+     8: 
+     9: 
+    10: <% @animal_post do |zone| %>
+    11:         <p><%= link_to_function animal_post.title, "$('#show_zone').toggle()" %></p>
+    12:         <ul id = "show_zone">
+    13:                 <% zone.areas.each do |area| %>
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34232840'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:28:56 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (0.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+  Rendered animal_posts/_animal_post.html.erb (125.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (129.0ms)
+Completed 500 Internal Server Error in 138ms
+
+ActionView::Template::Error (undefined method `animal_post' for #<#<Class:0x00000006e0a550>:0x000000075d57f8>):
+     7: <div class= "actions">
+     8: 
+     9: 
+    10: <% animal_post do |zone| %>
+    11:         <p><%= link_to_function animal_post.title, "$('#show_zone').toggle()" %></p>
+    12:         <ul id = "show_zone">
+    13:                 <% zone.areas.each do |area| %>
+  app/views/animal_posts/_animal_post.html.erb:10:in `_app_views_animal_posts__animal_post_html_erb__1195478860_61810960'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34232840'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (22.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (57.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:29:18 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered animal_posts/_animal_post.html.erb (4.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `each' for #<AnimalPost:0x00000004252a48>):
+     7: <div class= "actions">
+     8: 
+     9: 
+    10: <% animal_post.each do |zone| %>
+    11:         <p><%= link_to_function animal_post.title, "$('#show_zone').toggle()" %></p>
+    12:         <ul id = "show_zone">
+    13:                 <% zone.areas.each do |area| %>
+  app/views/animal_posts/_animal_post.html.erb:10:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34853860'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34232840'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (43.0ms)
+
+
+Started GET "/animal_posts/1" for 127.0.0.1 at 2014-02-19 22:31:32 -0500
+Processing by AnimalPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts" WHERE "animal_posts"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered animal_posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:31:32 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:31:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:31:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:31:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:31:32 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:31:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:31:32 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:31:35 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+ERROR: compiling _app_views_animal_posts__animal_post_html_erb__1195478860_34849400 RAISED C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:10: syntax error, unexpected keyword_do, expecting keyword_end
+'; @animal_post do |animal| 
+                  ^
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input
+Function body:           def _app_views_animal_posts__animal_post_html_erb__1195478860_34849400(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "animal_posts/_animal_post";_old_output_buffer = @output_buffer;animal_post = animal_post = local_assigns[:animal_post];animal_post_counter = animal_post_counter = local_assigns[:animal_post_counter];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='
+<div class ="animal-post">
+';
+
+
+@output_buffer.safe_append='
+<div class= "actions">
+
+
+'; @animal_post do |animal| 
+@output_buffer.safe_append='        <p>';@output_buffer.append=( link_to_function animal.title, "$('#show_zone').toggle()" );@output_buffer.safe_append='</p>
+        <ul id = "show_zone">
+';                 zone.areas.each do |area| 
+@output_buffer.safe_append='                  <li>';@output_buffer.append=( link_to_function animal.body, "new Effect.toggle('#show_area')" );@output_buffer.safe_append='
+';@output_buffer.safe_append='               </li>
+';                end 
+@output_buffer.safe_append='        </ul>
+'; end 
+@output_buffer.safe_append='
+
+	';@output_buffer.append=( link_to animal_post.title, animal_post );@output_buffer.safe_append='
+';@output_buffer.safe_append='	';@output_buffer.append=( link_to "destroy",						 
+				animal_post, method: :delete,  
+				confirm: "Are you sure you want to delete this news post? " );@output_buffer.safe_append='
+';@output_buffer.safe_append='				<!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
+</div>
+</div>
+</li>
+
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:399:in `block in collection_with_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:395:in `map'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:395:in `collection_with_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:291:in `render_collection'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:275:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:274:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34212660'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:143:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__125349047__process_action__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__1707191501__call__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered animal_posts/_animal_post.html.erb (5.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:10: syntax error, unexpected keyword_do, expecting keyword_end
+'; @animal_post do |animal| 
+                  ^
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input):
+     7: <div class= "actions">
+     8: 
+     9: 
+    10: <% @animal_post do |animal| %>
+    11:         <p><%= link_to_function animal.title, "$('#show_zone').toggle()" %></p>
+    12:         <ul id = "show_zone">
+    13:                 <% zone.areas.each do |area| %>
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34212660'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:31:35 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (0.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+ERROR: compiling _app_views_animal_posts__animal_post_html_erb__1195478860_61796140 RAISED C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:10: syntax error, unexpected keyword_do, expecting keyword_end
+'; @animal_post do |animal| 
+                  ^
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input
+Function body:           def _app_views_animal_posts__animal_post_html_erb__1195478860_61796140(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "animal_posts/_animal_post";_old_output_buffer = @output_buffer;animal_post = animal_post = local_assigns[:animal_post];animal_post_counter = animal_post_counter = local_assigns[:animal_post_counter];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='
+<div class ="animal-post">
+';
+
+
+@output_buffer.safe_append='
+<div class= "actions">
+
+
+'; @animal_post do |animal| 
+@output_buffer.safe_append='        <p>';@output_buffer.append=( link_to_function animal.title, "$('#show_zone').toggle()" );@output_buffer.safe_append='</p>
+        <ul id = "show_zone">
+';                 zone.areas.each do |area| 
+@output_buffer.safe_append='                  <li>';@output_buffer.append=( link_to_function animal.body, "new Effect.toggle('#show_area')" );@output_buffer.safe_append='
+';@output_buffer.safe_append='               </li>
+';                end 
+@output_buffer.safe_append='        </ul>
+'; end 
+@output_buffer.safe_append='
+
+	';@output_buffer.append=( link_to animal_post.title, animal_post );@output_buffer.safe_append='
+';@output_buffer.safe_append='	';@output_buffer.append=( link_to "destroy",						 
+				animal_post, method: :delete,  
+				confirm: "Are you sure you want to delete this news post? " );@output_buffer.safe_append='
+';@output_buffer.safe_append='				<!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
+</div>
+</div>
+</li>
+
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:399:in `block in collection_with_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:395:in `map'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:395:in `collection_with_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:291:in `render_collection'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:275:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/partial_renderer.rb:274:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34232840'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:143:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__125349047__process_action__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__1707191501__call__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered animal_posts/_animal_post.html.erb (4.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:10: syntax error, unexpected keyword_do, expecting keyword_end
+'; @animal_post do |animal| 
+                  ^
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input):
+     7: <div class= "actions">
+     8: 
+     9: 
+    10: <% @animal_post do |animal| %>
+    11:         <p><%= link_to_function animal.title, "$('#show_zone').toggle()" %></p>
+    12:         <ul id = "show_zone">
+    13:                 <% zone.areas.each do |area| %>
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34232840'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:34:40 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (0.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7: <div class= "actions">
+     8: 
+     9: 
+    10: <% @animal_post.each do |animal| %>
+    11:         <p><%= link_to_function animal.title, "$('#show_zone').toggle()" %></p>
+    12:         <ul id = "show_zone">
+    13:                 <% zone.areas.each do |area| %>
+  app/views/animal_posts/_animal_post.html.erb:10:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34789400'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34232840'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:45:11 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34867880 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:12)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:45:12 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:45:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:12 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:12 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:45:24 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34853100 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:12)
+  Rendered animal_posts/_animal_post.html.erb (2.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:45:24 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:24 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:45:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:24 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:45:33 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34853100 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:12)
+  Rendered animal_posts/_animal_post.html.erb (2.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:45:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:45:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:34 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:45:34 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:48:27 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered animal_posts/_animal_post.html.erb (108.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (114.0ms)
+Completed 500 Internal Server Error in 122ms
+
+ActionView::Template::Error (undefined method `show_animal_post_path' for #<#<Class:0x00000006e0a550>:0x00000004185de0>):
+     9: 
+    10: 
+    11: 	<%= link_to animal_post.title, animal_post %>
+    12: 	<%= link_to "Open in new tab", show_animal_post_path(@animal_post) %>
+    13: 	<%= link_to "destroy",						 
+    14: 				animal_post, method: :delete,  
+    15: 				confirm: "Are you sure you want to delete this news post? " %>
+  app/views/animal_posts/_animal_post.html.erb:12:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34882720'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34313540'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:48:42 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (0.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+  Rendered animal_posts/_animal_post.html.erb (89.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (95.0ms)
+Completed 500 Internal Server Error in 100ms
+
+ActionView::Template::Error (undefined method `show_animal_post_path' for #<#<Class:0x00000006e0a550>:0x000000041876b8>):
+     9: 
+    10: 
+    11: 	<%= link_to animal_post.title, animal_post %>
+    12: 	<%= link_to "Open in new tab", show_animal_post_path(animal_post) %>
+    13: 	<%= link_to "destroy",						 
+    14: 				animal_post, method: :delete,  
+    15: 				confirm: "Are you sure you want to delete this news post? " %>
+  app/views/animal_posts/_animal_post.html.erb:12:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34900820'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34313540'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (22.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (63.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:48:53 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered animal_posts/_animal_post.html.erb (15.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined local variable or method `show_animal_post_path' for #<#<Class:0x00000006e0a550>:0x000000041500a0>):
+     9: 
+    10: 
+    11: 	<%= link_to animal_post.title, animal_post %>
+    12: 	<%= link_to "Open in new tab", show_animal_post_path %>
+    13: 	<%= link_to "destroy",						 
+    14: 				animal_post, method: :delete,  
+    15: 				confirm: "Are you sure you want to delete this news post? " %>
+  app/views/animal_posts/_animal_post.html.erb:12:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34866700'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34313540'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:50:53 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+  Rendered animal_posts/_animal_post.html.erb (44.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (50.0ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (undefined method `show_animal_post_path' for #<#<Class:0x00000006e0a550>:0x0000000418e7b0>):
+     9: 
+    10: 
+    11: 	<%= link_to animal_post.title, animal_post %>
+    12: 	<%= link_to "Open in new tab", show_animal_post_path(animal_post) %>
+    13: 	<%= link_to "destroy",						 
+    14: 				animal_post, method: :delete,  
+    15: 				confirm: "Are you sure you want to delete this news post? " %>
+  app/views/animal_posts/_animal_post.html.erb:12:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34867160'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34313540'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:51:04 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34768600 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:13)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:51:04 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:51:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:51:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:51:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:51:04 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:51:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:51:04 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:51:25 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+  Rendered animal_posts/_animal_post.html.erb (15.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (23.0ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined local variable or method `show_animal_post_path' for #<#<Class:0x00000006e0a550>:0x000000040f45e8>):
+     9: 
+    10: 
+    11: 	<%= link_to animal_post.title, animal_post %>
+    12: 	<%= link_to "Open in new tab", show_animal_post_path %>
+    13: 	<%= link_to "destroy",						 
+    14: 				animal_post, method: :delete,  
+    15: 				confirm: "Are you sure you want to delete this news post? " %>
+  app/views/animal_posts/_animal_post.html.erb:12:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34656840'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34313540'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:51:33 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered animal_posts/_animal_post.html.erb (14.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `show_animal_post_path' for #<#<Class:0x00000006e0a550>:0x00000004140f60>):
+     9: 
+    10: 
+    11: 	<%= link_to animal_post.title, animal_post %>
+    12: 	<%= link_to "Open in new tab", show_animal_post_path() %>
+    13: 	<%= link_to "destroy",						 
+    14: 				animal_post, method: :delete,  
+    15: 				confirm: "Are you sure you want to delete this news post? " %>
+  app/views/animal_posts/_animal_post.html.erb:12:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34789020'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34313540'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:52:14 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+  Rendered animal_posts/_animal_post.html.erb (18.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (23.0ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined local variable or method `show' for #<#<Class:0x00000006e0a550>:0x000000041877f8>):
+     9: 
+    10: 
+    11: 	<%= link_to animal_post.title, animal_post %>
+    12: 	<%= link_to "Open in new tab", show %>
+    13: 	<%= link_to "destroy",						 
+    14: 				animal_post, method: :delete,  
+    15: 				confirm: "Are you sure you want to delete this news post? " %>
+  app/views/animal_posts/_animal_post.html.erb:12:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34887980'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34313540'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:52:26 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (0.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+  Rendered animal_posts/_animal_post.html.erb (12.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined local variable or method `show_animal_post' for #<#<Class:0x00000006e0a550>:0x00000003678e48>):
+     9: 
+    10: 
+    11: 	<%= link_to animal_post.title, animal_post %>
+    12: 	<%= link_to "Open in new tab", show_animal_post %>
+    13: 	<%= link_to "destroy",						 
+    14: 				animal_post, method: :delete,  
+    15: 				confirm: "Are you sure you want to delete this news post? " %>
+  app/views/animal_posts/_animal_post.html.erb:12:in `_app_views_animal_posts__animal_post_html_erb__1195478860_34195640'
+  app/views/animal_posts/index.html.erb:15:in `_app_views_animal_posts_index_html_erb___1643863417_34313540'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:52:35 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (0.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34852840 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:12)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:52:35 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:52:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:52:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:52:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:52:35 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:52:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:52:35 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 22:59:51 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34854560 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:25)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 22:59:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:59:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:59:52 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 22:59:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 22:59:52 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 22:59:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:59:52 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 23:00:19 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (0.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34816240 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:25)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 23:00:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 23:00:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:20 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:20 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 23:00:42 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34689920 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:25)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 23:00:43 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 23:00:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:43 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:43 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 23:00:59 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (1.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34725740 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:25)
+  Rendered animal_posts/_animal_post.html.erb (4.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 23:00:59 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 23:00:59 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 23:00:59 -0500
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-19 23:01:09 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb__1195478860_34789160 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:25)
+  Rendered animal_posts/_animal_post.html.erb (3.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-19 23:01:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-19 23:01:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 23:01:09 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-19 23:01:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-19 23:01:09 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-19 23:01:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-19 23:01:09 -0500
