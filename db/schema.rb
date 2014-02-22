@@ -24,11 +24,4 @@ ActiveRecord::Schema.define(version: 20140217235221) do
     t.datetime "updated_at"
   end
 
-  create_table "news_posts", force: true do |t|
-    t.string   "title"
-    t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end
