@@ -1,6 +1,11 @@
 PetAdoption::Application.routes.draw do
 
+
+  root "pages#home"
   get "animal_posts/index"
+  get "/volunteer" => "pages#volunteer"
+  get "/foster" => "pages#foster"
+  get "/donate" => "pages#donate"
 
   resources :animal_posts
   # The priority is based upon order of creation: first created -> highest priority.
