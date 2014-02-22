@@ -65,7 +65,7 @@ display:block;
 	padding:8px 10px;
 	display:block;
 	font-size:16px;
-	color:#eee;
+	color:#eee; //Text color of the animal names
 	text-decoration:none;
 }
 
@@ -98,7 +98,6 @@ display:block;
 }
 
 /*Set position of the number on the slide*/  
-
 .vertical section:target:after{ 
      left:-9999px;
 }
