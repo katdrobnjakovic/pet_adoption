@@ -4,9 +4,9 @@
 <%# Add each animal to the accordion table /#%>
 <div class="accordion vertical">
     <section id="<%= animal_post.id %>">
-        <h2>  <a href="#<%= animal_post.id %>"><%= animal_post.title %> </a>  </h2>
+        <h2>  <a href="#<%= animal_post.id %>"><%= animal_post.name %> </a>  </h2>
         <p>
-        	<%= animal_post.body %><br>
+        	<%= animal_post.description %><br>
         	<%= link_to "Edit Animal Post with ID:  #{animal_post.id}", edit_animal_post_path(animal_post) %>
 
 			<%= link_to "destroy",						 
