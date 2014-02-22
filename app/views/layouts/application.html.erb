@@ -8,7 +8,42 @@
 </head>
 <body>
 
-<%= yield %>
+	<div class="header" id="header">
+		<div class ="container" id="header-container">
+			<%= "Name of Organization" %>
+
+		</div>
+		
+	</div>
+
+
+	<div class="navigation">
+		<div class ="container" >
+			<!---<%= image_tag "dog_silhouette.png"%> ADD LOGO PHOTO HERE-->
+			<%= link_to "Home", root_path, class: "nav-link" %>
+			<%= link_to "Adopt Us", animal_posts_path, class: "nav-link" %>
+			<%= link_to "Volunteer", volunteer_path, class: "nav-link" %>
+			<%= link_to "Foster", foster_path, class: "nav-link" %>
+			<%= link_to "Donate", donate_path, class: "nav-link" %>
+
+		</div>
+
+	</div>
+
+	<div class="content">
+		<div class ="container">
+			<%= yield %>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class ="container">
+			<%= "Contact Us" %></br>
+			<%= "Phone Number:" %></br>
+			<%= "Email:" %></br>
+			<%= "Address:" %></br>
+		</div>
+	</div>
 
 </body>
 </html>
