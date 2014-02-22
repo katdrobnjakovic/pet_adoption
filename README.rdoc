@@ -1,28 +1,5 @@
-== README
+== Pet Adoption Template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This web app is a template which can be used by pet adoption organizations. It contains an adopt us page, containing the adoptable pets, volunteer page, foster page, and donate page. A restful resource is used to allow for the animal profiles. The profiles can be added, edited, and deleted in the template. The profiles are stored in a postgreSQL database.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This web app uses ruby 2.0.0 and rails 4.0.2 and a postgreSQL database through pgAdmin III. 
