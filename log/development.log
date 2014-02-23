@@ -15405,3 +15405,1888 @@ Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:41:2
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:41:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-22 18:51:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnimalPostsController#index as HTML
+  [1m[35mAnimalPost Load (2.0ms)[0m  SELECT "animal_posts".* FROM "animal_posts"
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb___1040875407_40799960 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:12)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb___1040875407_40799960 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:12)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb___1040875407_40799960 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:12)
+  Rendered animal_posts/_animal_post.html.erb (7.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 214ms (Views: 181.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:51:31 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:51:31 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:51:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:51:31 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:51:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:51:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:51:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:51:31 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:51:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:51:31 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:51:32 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:53:02 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:03 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:03 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:03 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:03 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:03 -0500
+
+
+Started GET "/Online" for 127.0.0.1 at 2014-02-22 18:53:26 -0500
+
+ActionController::RoutingError (No route matches [GET] "/Online"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (96.0ms)
+
+
+Started GET "/Online" for 127.0.0.1 at 2014-02-22 18:53:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/Online"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (73.0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:53:34 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:34 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:34 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:34 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:34 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:35 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:35 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:53:53 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:54:28 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:54:35 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:54:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:54:35 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:54:36 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:54:36 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:54:36 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:54:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:54:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:54:36 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:54:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:54:36 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:56:05 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:56:23 -0500
+
+
+Started GET "/Online" for 127.0.0.1 at 2014-02-22 18:56:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/Online"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (67.0ms)
+
+
+Started GET "/Online" for 127.0.0.1 at 2014-02-22 18:56:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/Online"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (68.0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:57:58 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:58:24 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:58:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:58:25 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:58:25 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:58:25 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:58:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:58:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:58:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:58:25 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:58:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:58:25 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 18:59:16 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 18:59:17 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 18:59:17 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 18:59:17 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 18:59:17 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 18:59:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 18:59:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 18:59:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 18:59:17 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 18:59:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 18:59:17 -0500
+
+
+Started GET "/volunteer" for 127.0.0.1 at 2014-02-22 19:00:54 -0500
+Processing by PagesController#volunteer as HTML
+  Rendered pages/volunteer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/volunteer" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+Processing by PagesController#volunteer as HTML
+  Rendered pages/volunteer.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 19:01:08 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 19:01:10 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 19:01:52 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined local variable or method `the' for #<#<Class:0x00000003ff5368>:0x00000003f8ed48>):
+    36: 		</p>  
+    37:    	</section> 
+    38:  </div>
+    39:  <%= Hop on over to the %>
+    40:  <%= link_to "Volunteer", "/volunteer" %>
+    41:  <%= page to donate time instead! %>
+  app/views/pages/donate.html.erb:39:in `_app_views_pages_donate_html_erb___103738889_33369400'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (33.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (66.0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 19:02:19 -0500
+Processing by PagesController#donate as HTML
+ERROR: compiling _app_views_pages_donate_html_erb___103738889_33354840 RAISED C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+...=( "Hop on over to the" link_to "Volunteer", "/volunteer" "p...
+...                               ^
+Function body:           def _app_views_pages_donate_html_erb___103738889_33354840(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "pages/donate";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=( "Every little bit helps! ");@output_buffer.safe_append='
+';@output_buffer.safe_append='
+<div class="accordion vertical">
+	<section id="Online">
+        <h2>  <a href="#Online" style="color: #cce1d7">Donate using Paypal </a>  </h2>
+        <p>
+        	Even 10$ would help!<br>
+        	<br>
+        	<a href="https://www.paypal.com/home" style= "color: #0D9DBA">Paypal Page</a>
+				<!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
+		</p>  
+   	</section> 
+
+   		<section id="ByCheque">
+        <h2>  <a href="#ByCheque" style="color: #cce1d7">By Cheque</a>  </h2>
+        <p>
+        	Make the cheque out to: ______<br>
+        	<br>
+        	Mail to:<br>
+        	 _________<br>
+        	 _________<br>
+        	 _________<br>
+        	<br>
+        	Or in person.
+		</p>  
+   	</section> 
+
+   		<section id="Items">
+        <h2>  <a href="#Items" style="color: #cce1d7">Items</a>  </h2>
+        <p>
+        	We are currently in need of:<br>
+        	_______<br>
+        	_______<br>
+        	_______<br>
+        	_______<br>
+		</p>  
+   	</section> 
+ </div>
+ ';@output_buffer.append=( "Hop on over to the" link_to "Volunteer", "/volunteer" "page to donate time instead!" );@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__232700162__process_action__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__1030734864__call__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered pages/donate.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+...=( "Hop on over to the" link_to "Volunteer", "/volunteer" "p...
+...                               ^):
+    36: 		</p>  
+    37:    	</section> 
+    38:  </div>
+    39:  <%= "Hop on over to the" link_to "Volunteer", "/volunteer" "page to donate time instead!" %>
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__232700162__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1030734864__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 19:02:51 -0500
+Processing by PagesController#donate as HTML
+ERROR: compiling _app_views_pages_donate_html_erb___103738889_33196580 RAISED C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+...=( "Hop on over to the" link_to "Volunteer", /volunteer "pag...
+...                               ^
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: unterminated regexp meets end of file
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected end-of-input, expecting ')'
+Function body:           def _app_views_pages_donate_html_erb___103738889_33196580(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "pages/donate";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=( "Every little bit helps! ");@output_buffer.safe_append='
+';@output_buffer.safe_append='
+<div class="accordion vertical">
+	<section id="Online">
+        <h2>  <a href="#Online" style="color: #cce1d7">Donate using Paypal </a>  </h2>
+        <p>
+        	Even 10$ would help!<br>
+        	<br>
+        	<a href="https://www.paypal.com/home" style= "color: #0D9DBA">Paypal Page</a>
+				<!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
+		</p>  
+   	</section> 
+
+   		<section id="ByCheque">
+        <h2>  <a href="#ByCheque" style="color: #cce1d7">By Cheque</a>  </h2>
+        <p>
+        	Make the cheque out to: ______<br>
+        	<br>
+        	Mail to:<br>
+        	 _________<br>
+        	 _________<br>
+        	 _________<br>
+        	<br>
+        	Or in person.
+		</p>  
+   	</section> 
+
+   		<section id="Items">
+        <h2>  <a href="#Items" style="color: #cce1d7">Items</a>  </h2>
+        <p>
+        	We are currently in need of:<br>
+        	_______<br>
+        	_______<br>
+        	_______<br>
+        	_______<br>
+		</p>  
+   	</section> 
+ </div>
+ ';@output_buffer.append=( "Hop on over to the" link_to "Volunteer", /volunteer "page to donate time instead!" );@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__232700162__process_action__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__1030734864__call__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered pages/donate.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+...=( "Hop on over to the" link_to "Volunteer", /volunteer "pag...
+...                               ^
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: unterminated regexp meets end of file
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected end-of-input, expecting ')'):
+    36: 		</p>  
+    37:    	</section> 
+    38:  </div>
+    39:  <%= "Hop on over to the" link_to "Volunteer", /volunteer "page to donate time instead!" %>
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__232700162__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1030734864__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 19:02:58 -0500
+Processing by PagesController#donate as HTML
+ERROR: compiling _app_views_pages_donate_html_erb___103738889_33276760 RAISED C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+...=( "Hop on over to the" link_to "Volunteer", volunteer "page...
+...                               ^
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ink_to "Volunteer", volunteer "page to donate time instead!"...
+...                               ^
+Function body:           def _app_views_pages_donate_html_erb___103738889_33276760(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "pages/donate";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=( "Every little bit helps! ");@output_buffer.safe_append='
+';@output_buffer.safe_append='
+<div class="accordion vertical">
+	<section id="Online">
+        <h2>  <a href="#Online" style="color: #cce1d7">Donate using Paypal </a>  </h2>
+        <p>
+        	Even 10$ would help!<br>
+        	<br>
+        	<a href="https://www.paypal.com/home" style= "color: #0D9DBA">Paypal Page</a>
+				<!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
+		</p>  
+   	</section> 
+
+   		<section id="ByCheque">
+        <h2>  <a href="#ByCheque" style="color: #cce1d7">By Cheque</a>  </h2>
+        <p>
+        	Make the cheque out to: ______<br>
+        	<br>
+        	Mail to:<br>
+        	 _________<br>
+        	 _________<br>
+        	 _________<br>
+        	<br>
+        	Or in person.
+		</p>  
+   	</section> 
+
+   		<section id="Items">
+        <h2>  <a href="#Items" style="color: #cce1d7">Items</a>  </h2>
+        <p>
+        	We are currently in need of:<br>
+        	_______<br>
+        	_______<br>
+        	_______<br>
+        	_______<br>
+		</p>  
+   	</section> 
+ </div>
+ ';@output_buffer.append=( "Hop on over to the" link_to "Volunteer", volunteer "page to donate time instead!" );@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__232700162__process_action__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__1030734864__call__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered pages/donate.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+...=( "Hop on over to the" link_to "Volunteer", volunteer "page...
+...                               ^
+C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ink_to "Volunteer", volunteer "page to donate time instead!"...
+...                               ^):
+    36: 		</p>  
+    37:    	</section> 
+    38:  </div>
+    39:  <%= "Hop on over to the" link_to "Volunteer", volunteer "page to donate time instead!" %>
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__232700162__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1030734864__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 19:03:35 -0500
+Processing by PagesController#donate as HTML
+ERROR: compiling _app_views_pages_donate_html_erb___103738889_33368300 RAISED C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+...=( "Hop on over to the" link_to "Volunteer", "/volunteer" "p...
+...                               ^
+Function body:           def _app_views_pages_donate_html_erb___103738889_33368300(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "pages/donate";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=( "Every little bit helps! ");@output_buffer.safe_append='
+';@output_buffer.safe_append='
+<div class="accordion vertical">
+	<section id="Online">
+        <h2>  <a href="#Online" style="color: #cce1d7">Donate using Paypal </a>  </h2>
+        <p>
+        	Even 10$ would help!<br>
+        	<br>
+        	<a href="https://www.paypal.com/home" style= "color: #0D9DBA">Paypal Page</a>
+				<!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
+		</p>  
+   	</section> 
+
+   		<section id="ByCheque">
+        <h2>  <a href="#ByCheque" style="color: #cce1d7">By Cheque</a>  </h2>
+        <p>
+        	Make the cheque out to: ______<br>
+        	<br>
+        	Mail to:<br>
+        	 _________<br>
+        	 _________<br>
+        	 _________<br>
+        	<br>
+        	Or in person.
+		</p>  
+   	</section> 
+
+   		<section id="Items">
+        <h2>  <a href="#Items" style="color: #cce1d7">Items</a>  </h2>
+        <p>
+        	We are currently in need of:<br>
+        	_______<br>
+        	_______<br>
+        	_______<br>
+        	_______<br>
+		</p>  
+   	</section> 
+ </div>
+ ';@output_buffer.append=( "Hop on over to the" link_to "Volunteer", "/volunteer" "page to donate time instead!" );@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__232700162__process_action__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__1030734864__call__callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered pages/donate.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/pages/donate.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+...=( "Hop on over to the" link_to "Volunteer", "/volunteer" "p...
+...                               ^):
+    36: 		</p>  
+    37:    	</section> 
+    38:  </div>
+    39:  <%= "Hop on over to the" link_to "Volunteer", "/volunteer" "page to donate time instead!" %>
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__232700162__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1030734864__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/Users/Neurons/Downloads/RubyOnRails/SDK/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 19:03:53 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:05 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 19:04:28 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:28 -0500
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:28 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:29 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:29 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:29 -0500
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+
+
+Started GET "/assets/animal_posts.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+
+
+Started GET "/assets/animal_posts.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-22 19:04:41 -0500
+
+
+Started GET "/foster" for 127.0.0.1 at 2014-02-22 19:04:45 -0500
+Processing by PagesController#foster as HTML
+  Rendered pages/foster.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/volunteer" for 127.0.0.1 at 2014-02-22 19:04:46 -0500
+Processing by PagesController#volunteer as HTML
+  Rendered pages/volunteer.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foster" for 127.0.0.1 at 2014-02-22 19:04:47 -0500
+Processing by PagesController#foster as HTML
+  Rendered pages/foster.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/animal_posts" for 127.0.0.1 at 2014-02-22 19:04:48 -0500
+Processing by AnimalPostsController#index as HTML
+  [1m[36mAnimalPost Load (1.0ms)[0m  [1mSELECT "animal_posts".* FROM "animal_posts"[0m
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb___1040875407_34618140 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:12)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb___1040875407_34618140 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:12)
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_animal_posts__animal_post_html_erb___1040875407_34618140 at C:/Users/Neurons/Documents/GitHub/pet_adoption/app/views/animal_posts/_animal_post.html.erb:12)
+  Rendered animal_posts/_animal_post.html.erb (6.0ms)
+  Rendered animal_posts/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 1.0ms)
