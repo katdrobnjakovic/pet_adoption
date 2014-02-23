@@ -1,3 +1,103 @@
 // Place all the styles related to the animal_posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+/*Define accordion box*/
+.accordion{
+	width:830px;
+	overflow:hidden;
+	margin:10px ato;
+	color:#474747; 
+	background:#414141; 
+	adding:10px; 
+}
+
+.accordion section{
+	float:left;
+	overflow:hidden;
+	color:#333;
+	cursor:pointer;
+	background: #333;
+	margin:3px;
+}
+
+.accordion section:hover{
+	background:#444;
+}
+
+.accordion section p{
+	display:none;
+}
+
+.accordion section:after{
+	position:relative;
+	font-size:24px;
+	color:#000;
+	font-weight:bold;
+}
+
+.accordion section:target{
+background:#FFF;
+padding:10px;
+}
+
+.accordion section:target:hover{
+background:#FFF;
+padding:10px;
+}
+
+.accordion section:target h2{
+width:100%;
+}
+
+.accordion section:target h2 a{
+color:#333;
+padding:0;
+}
+
+.accordion section:target p{
+display:block;
+}
+
+.accordion section h2 a{
+	padding:8px 10px;
+	display:block;
+	font-size:16px;
+	color:#eee; //Text color of the animal names
+	text-decoration:none;
+}
+
+.vertical section{
+	width:100%;
+	height:40px;
+	-moz-transition: height 0.2s ease-out;
+	-webkit-transition: height 0.2s ease-out;
+	-o-transition:height 0.2s ease-out;
+	transition: height 0.2s ease-out;
+}
+
+/*Set height of the slide*/
+.vertical :target{ 
+     width:97%;
+     height:250px; 
+}
+
+/*Header of closed slide*/
+.vertical section h2 { 
+     position:relative; 
+     left:0px; 
+     top:-15px;
+} 
+
+/*Position the number of the slide*/
+.vertical section:after{
+      top:-60px;
+      left:810px;
+}
+
+/*Set position of the number on the slide*/  
+.vertical section:target:after{ 
+     left:-9999px;
+}
