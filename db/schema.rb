@@ -17,7 +17,11 @@ ActiveRecord::Schema.define(version: 20140217235221) do
   enable_extension "plpgsql"
   enable_extension "adminpack"
 
-# Could not dump table "animal_posts" because of following StandardError
-#   Unknown type 'name' for column 'name'
+  create_table "animal_posts", force: true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
