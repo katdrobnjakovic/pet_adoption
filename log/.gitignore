@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+
+*.log
+
+*.scssc
+=======
+.bundle
+db/*.sqlite3*
+log/*.log
+*.log
+/tmp/
+doc/
+*.swp
+*~
+.project
+.DS_Store
+*.DS_Store*
+.sass-cache/
+public/uploads*
+.setenv
+tmp/cache
+>>>>>>> FETCH_HEAD
+
+*.scssc
+
+*.log
