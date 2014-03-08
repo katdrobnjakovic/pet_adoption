@@ -48,7 +48,7 @@ class AnimalPostsController < ApplicationController
   private
 
     def animal_post_params
-      params.require(:animal_post).permit(:title,:body) #sanitizes the hash
+      params.require(:animal_post).permit(:name, :description, :birth, :vaccinated, :fertile) #sanitizes the hash
     end
 
 
