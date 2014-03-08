@@ -1,3 +1,0 @@
-  [1m[36m (43.0ms)[0m  [1mDROP DATABASE IF EXISTS "postgres"[0m
-PG::ObjectInUse: ERROR:  cannot drop the currently open database
-: DROP DATABASE IF EXISTS "postgres"

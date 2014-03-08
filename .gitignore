@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+
+*.log
+
+*.scssc
+=======
 .bundle
 db/*.sqlite3*
 log/*.log
@@ -13,3 +19,20 @@ doc/
 public/uploads*
 .setenv
 tmp/cache
+>>>>>>> FETCH_HEAD
+
+*.scssc
+
+*.log
+
+tmp/cache/assets/development/sprockets/f7cbd26ba1d28d48de824f0e94586655
+
+tmp/cache/assets/development/sprockets/f7cbd26ba1d28d48de824f0e94586655
+
+tmp/cache/assets/development/sprockets/f1663d34d4b6003379113df98f1433a5
+
+tmp/cache/assets/development/sprockets/f7cbd26ba1d28d48de824f0e94586655
+
+tmp/cache/assets/development/sprockets/58d13fa8238ddbe40924e2b2b8e2b892
+
+tmp/cache/assets/development/sprockets/357970feca3ac29060c1e3861e2c0953
