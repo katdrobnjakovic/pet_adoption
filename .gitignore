@@ -20,3 +20,5 @@ public/uploads*
 .setenv
 tmp/cache
 >>>>>>> FETCH_HEAD
+
+*.scssc
