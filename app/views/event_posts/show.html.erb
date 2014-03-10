@@ -1,0 +1,21 @@
+<h1> <%= @event_post.title %></h1> 
+
+<p>
+	Description: <%= @event_post.description %>
+</p>
+
+<p>
+	ID: <%= @event_post.id %>
+</p>
+
+<p>
+	Updated: <%= @event_post.updated_at %>
+</p>
+
+<p>
+	Created: <%= @event_post.created_at %>
+</p>
+
+<%= link_to "Edit Event Post with ID:  #{@event_post.id}", edit_event_post_path(@event_post) %>
+
+<%= link_to "Back to All Events", event_posts_path %>
