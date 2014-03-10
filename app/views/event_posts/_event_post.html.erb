@@ -1,0 +1,19 @@
+
+<div class ="event-post">
+
+<%# Add each animal to the accordion table /#%>
+
+    <section id="<%= event_post.id %>">
+        <h2>  <a href="#<%= event_post.id %>" style="color: #cce1d7"><%= event_post.name %> </a>  </h2>
+        <p>
+        	<%= event_post.description %><br>
+        	<%= link_to "Edit Event Post with ID:  #{event_post.id}", edit_event_post_path(event_post) %>
+
+			<%= link_to "destroy",						 
+				event_post, method: :delete,  
+				confirm: "Are you sure you want to delete this event post? " %>
+				<!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
+		</p>  
+   	</section> 
+</div>
+
