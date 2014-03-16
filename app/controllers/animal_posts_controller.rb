@@ -1,5 +1,7 @@
 class AnimalPostsController < ApplicationController
   
+  before_action :deny_access_for_non_admins, except: [:index, :show]
+  
   def index
   	@animal_posts = AnimalPost.all #variables with an @ are instance variables
   end

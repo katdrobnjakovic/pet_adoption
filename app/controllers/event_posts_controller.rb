@@ -1,5 +1,7 @@
 class EventPostsController < ApplicationController
   
+before_action :deny_access_for_non_admins, except: [:index, :show]
+
   def index
   	@event_posts = EventPost.all #variables with an @ are instance variables
   end

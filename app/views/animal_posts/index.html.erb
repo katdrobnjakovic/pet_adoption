@@ -4,9 +4,9 @@
 	Welcome to the adopt us section. Here you will find all the animals available for adoption. 
 
 </p>
-
+<% if admin? %>
 <%= link_to "Add New Animal Posts", new_animal_post_path %>
-
+<% end %>
 <ul>
 
 	<div class="accordion vertical">
