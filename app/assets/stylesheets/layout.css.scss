@@ -1,7 +1,7 @@
 /* Layout Styling */
 body {
 
-	margin: 0; /*default rails padding around boarder*/
+	margin: 0; /*default rails padding around border*/
 	background: #222222;
 }
 
@@ -19,16 +19,19 @@ body {
 /* Header Styling */
 .header {
 
-	background: #cce1d7;
+	background: #40E0D0;
 	color:black;
+	font-size: 24px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	padding: 20px;
 	text-align: center;
 }
 
 /* Navigation Styling */
 .navigation {
-	background: #cce1d7;
+	background: #474747;
 	color:black;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	text-align: center;
 }
 
@@ -56,6 +59,7 @@ body {
 	background: #ffffff;
 	padding: 60px;
 	height: 450px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	h1 {
 		margin-top: 0;
 	}
@@ -68,7 +72,8 @@ body {
 /* Footer Styling */
 .footer {
 
-	background: #333333;
+	background: #474747;
 	color:white;
 	text-align: left;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }

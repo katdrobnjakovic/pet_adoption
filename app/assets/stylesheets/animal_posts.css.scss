@@ -11,7 +11,6 @@
 	margin:10px ato;
 	color:#474747; 
 	background:#414141; 
-	adding:10px; 
 }
 
 .accordion section{
@@ -33,18 +32,18 @@
 
 .accordion section:after{
 	position:relative;
-	font-size:24px;
-	color:#000;
+	font-size:32px;
+	color:#474747;
 	font-weight:bold;
 }
 
 .accordion section:target{
-background:#FFF;
+background:#40E0D0;
 padding:10px;
 }
 
 .accordion section:target:hover{
-background:#FFF;
+background:#40E0D0;
 padding:10px;
 }
 
@@ -53,8 +52,10 @@ width:100%;
 }
 
 .accordion section:target h2 a{
-color:#333;
-padding:0;
+color:#474747;//color of h2 after expansion
+background:#828291;
+position:static;
+padding:8px 10px;
 }
 
 .accordion section:target p{
@@ -65,7 +66,7 @@ display:block;
 	padding:8px 10px;
 	display:block;
 	font-size:16px;
-	color:#eee; //Text color of the animal names
+	color:#cce1d7; //Text color of all the header names
 	text-decoration:none;
 }
 
@@ -93,7 +94,7 @@ display:block;
 
 /*Position the number of the slide*/
 .vertical section:after{
-      top:-60px;
+      top:0px;
       left:810px;
 }
 

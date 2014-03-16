@@ -1,16 +1,32 @@
 <%=	form_for @animal_post do |f| %> 
 
-	<div>
+	<div class="field">
 		<%= f.label :name %><br>
 		<%= f.text_field :name %><br>
 	</div>
-
-	<div>
+<br>
+	<div class="field">
 		<%= f.label :description %><br>
 		<%= f.text_field :description %><br>
 	</div>
+<br>
+	<div class="field">
+		<%= f.label "Approximately when was the animal born?" %><br>
+		<%#= f.date_select :birth %><!br>
+	</div>
+<br>
+	<div class="field">
+		<%= f.label "Has the animal had all necessary vaccinations?" %><br>
+		<%= f.select :vaccinated, [['Yes','yes'],['No','no']]  %><br>
+	</div>
+<br>
+	<div class="field">
+		<%= f.label "Has the animal been spayed/neutered?" %><br>
+		<%= f.select :fertile, [['Yes','yes'],['No','no']]  %><br>
+	</div>
 
-	<div>
+
+	<div class="actions">
 		<%= f.submit %>
 	</div>
 

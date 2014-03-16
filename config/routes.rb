@@ -1,6 +1,7 @@
 PetAdoption::Application.routes.draw do
 
 
+  devise_for :users
   root "pages#home"
   get "animal_posts/index"
   get "/volunteer" => "pages#volunteer"
