@@ -2,7 +2,11 @@
 <h1>All Animals</h1>
 <p>
 	Welcome to the adopt us section. Here you will find all the animals available for adoption. 
-
+	<br>
+	<br>
+	<%= link_to image_tag("Order_form.png", :size => "45x60"), "http://www.google.com"%>
+	<br>
+	Adoption Form
 </p>
 <% if admin? %>
 <%= link_to "Add New Animal Posts", new_animal_post_path, class: "reg-link"  %>
