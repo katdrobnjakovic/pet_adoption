@@ -3,17 +3,17 @@
 <br>
 <div class="accordion vertical">
 	<section id="Online">
-        <h2>  <a href="#Online" style="color: #cce1d7">Donate using Paypal </a>  </h2>
+        <h2>  <a href="#Online" >Donate using Paypal </a>  </h2>
         <p>
         	Even 10$ would help!<br>
         	<br>
-        	<a href="https://www.paypal.com/home" style= "color: #0D9DBA">Paypal Page</a>
+        	<a href="https://www.paypal.com/home" >Paypal Page</a>
 				<!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
 		</p>  
    	</section> 
 
    		<section id="ByCheque">
-        <h2>  <a href="#ByCheque" style="color: #cce1d7">By Cheque</a>  </h2>
+        <h2>  <a href="#ByCheque" >Donate By Cheque</a>  </h2>
         <p>
         	Make the cheque out to: ______<br>
         	<br>
@@ -27,7 +27,7 @@
    	</section> 
 
    		<section id="Items">
-        <h2>  <a href="#Items" style="color: #cce1d7">Items</a>  </h2>
+        <h2>  <a href="#Items" >Donate Items</a>  </h2>
         <p>
         	We are currently in need of:<br>
         	_______<br>
@@ -38,4 +38,7 @@
    	</section> 
  </div>
  <br>
- <%= "Or hop on over to the Volunteer page to donate time instead!" %>
+ <br>
+ <%= "Or hop on over to the " %>
+ <%= link_to "Volunteer", volunteer_path, class: "reg-link" %>
+ <%= " page to donate time instead!" %>

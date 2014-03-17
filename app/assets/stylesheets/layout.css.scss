@@ -2,7 +2,7 @@
 body {
 
 	margin: 0; /*default rails padding around border*/
-	background: #222222;
+	background: #bdd9e3;
 }
 
 .container {
@@ -18,8 +18,8 @@ body {
 
 /* Header Styling */
 .header {
-
-	background: #40E0D0;
+	width: 100%;
+	background: #aad9a5;
 	color:black;
 	font-size: 24px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -29,8 +29,8 @@ body {
 
 /* Navigation Styling */
 .navigation {
-	background: #474747;
-	color:black;
+	width: 100%;
+	background: #548c9c;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	text-align: center;
 }
@@ -43,7 +43,7 @@ body {
 	color:white; 
 
 	&:hover {
-		background:#ccc;
+		background:#aad9a5;
 		color:black;
 	}
 
@@ -53,10 +53,20 @@ body {
 
 }
 
+/*For inconspicuous links in text*/
+.reg-link{
+    text-decoration:none;
+	text-decoration:bold;
+	color:white;
+		&:hover {
+		color:black;
+	}
+}
+
 /* Content Styling */
 .content {
 
-	background: #ffffff;
+	background: #bdd9e3;
 	padding: 60px;
 	height: 450px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -71,9 +81,11 @@ body {
 
 /* Footer Styling */
 .footer {
-
-	background: #474747;
-	color:white;
+position: fixed;
+	background: #aad9a5;
+	color:black;
 	text-align: left;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	bottom: 0;
+    width: 100%;
 }

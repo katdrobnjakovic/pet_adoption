@@ -44,9 +44,6 @@ ActiveRecord::Schema.define(version: 20140316225945) do
     t.integer "role_id", null: false
   end
 
-  create_table "roles_users_tables", force: true do |t|
-  end
-
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
