@@ -6,7 +6,7 @@
 
 
 	<% if admin? %>
-		<%= link_to "Edit Animal Post with ID:  #{@animal_post.id}", edit_animal_post_path(@animal_post) %>
+		<%= link_to "Edit Animal Post with ID:  #{@animal_post.id}", edit_animal_post_path(@animal_post), class: "reg-link"  %>
 	<% end %>
 	
-<%= link_to "Back to All Animals", animal_posts_path %>
+<%= link_to "Back to All Animals", animal_posts_path, class: "reg-link"  %>
