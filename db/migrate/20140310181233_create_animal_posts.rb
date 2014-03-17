@@ -3,7 +3,7 @@ class CreateAnimalPosts < ActiveRecord::Migration
     create_table :animal_posts do |t|
       t.string :name
       t.text :description
-      t.string :birth
+      t.date :birth
       t.text :vaccinated
       t.text :fertile
 

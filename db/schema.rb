@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20140316225945) do
   create_table "animal_posts", force: true do |t|
     t.string   "name"
     t.text     "description"
-    t.string   "birth"
+    t.date     "birth"
     t.text     "vaccinated"
     t.text     "fertile"
     t.datetime "created_at"
@@ -42,9 +42,6 @@ ActiveRecord::Schema.define(version: 20140316225945) do
   create_table "roles_users", id: false, force: true do |t|
     t.integer "user_id", null: false
     t.integer "role_id", null: false
-  end
-
-  create_table "roles_users_tables", force: true do |t|
   end
 
   create_table "users", force: true do |t|
