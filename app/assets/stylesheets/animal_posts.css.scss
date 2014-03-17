@@ -37,12 +37,12 @@
 }
 
 .accordion section:target{
-background:#dfebf0;
+background:#bdd9e3;
 padding:12px;
 }
 
 .accordion section:target:hover{
-background:#dfebf0;
+background:#bdd9e3;
 padding:12px;
 }
 
@@ -52,7 +52,7 @@ width:100%;
 
 .accordion section:target h2 a{
 color:#548c9c;//color of h2 after expansion
-background:#dfebf0;
+background:#bdd9e3;
 position:static;
 text-decoration:bold;
 font-size: 20px;
@@ -61,8 +61,8 @@ overflow:hidden;
 
 .accordion section:target p{
 display:block;
-
-	overflow:hidden;
+background:#bdd9e3;
+overflow:hidden;
 }
 
 .accordion section h2 a{
