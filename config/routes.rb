@@ -2,13 +2,15 @@ PetAdoption::Application.routes.draw do
 
 
   devise_for :users
-  root "pages#home"
+  #root "pages#home"
+  root "event_posts#index"
   get "animal_posts/index"
   get "/volunteer" => "pages#volunteer"
   get "/foster" => "pages#foster"
   get "/donate" => "pages#donate"
 
   resources :animal_posts
+  resources :event_posts
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
