@@ -1,13 +1,60 @@
 
+
+<html>
+
 <h1>All Animals</h1>
 <p>
 	Welcome to the adopt us section. Here you will find all the animals available for adoption. 
 	<br>
 	<br>
-	<%= link_to image_tag("Order_form.png", :size => "45x60"), "http://www.google.com"%>
+	<%= link_to image_tag("Order_form.png", :size => "45x60"), "adoptForm"%>
 	<br>
-	Adoption Form
-</p>
+
+
+ 
+<!-- user input dialog -->
+
+ 
+ 
+
+
+
+<!-- overlay trigger element 
+<a id="formDemo" rel="#sheet"></a> -->
+<!-- the triggers 
+<p>
+  <button class="modalInput" rel="#prompt">Adoption Form</button>
+</p>-->
+ 
+<!-- the overlay 
+<div id="sheet" class="rounded"> -->
+
+	<!-- user input dialog 
+<div class="modal" id="prompt">
+  <h2>Adoption Application Form</h2>
+ 
+  <p>
+    Please complete the following application if you wish to make an adoption.  
+    If you have any questions or comments please contact us and we will do our best to help you any way we can.
+    Contact us at:
+  </p>-->
+ 
+ 
+  <!-- the form is on the first tab pane 
+  <div class="pane" id="pane1">
+ 
+    <form class="rounded" id="myform">
+ 		 <input />
+    <button type="submit"> Submit </button>
+    <button type="button" class="close"> Cancel </button>
+    </form>
+  </div>
+
+</div>
+</div>
+
+
+</p>-->
 <% if admin? %>
 <%= link_to "Add New Animal Posts", new_animal_post_path, class: "reg-link"  %>
 <% end %>
@@ -20,3 +67,58 @@
 	</div>
 
 </ul>
+
+</html>
+<!---
+<script type = "text/javascript">
+  var triggers = $(".modalInput").overlay({
+ 
+      // some mask tweaks suitable for modal dialogs
+      mask: {
+        color: '#ebecff',
+        loadSpeed: 200,
+        opacity: 0.9
+      },
+ 
+      closeOnClick: false
+  });
+
+    $("#prompt form").submit(function(e) {
+ 
+      // close the overlay
+      triggers.eq(1).overlay().close();
+ 
+      // get user input
+      var input = $("input", this).val();
+ 
+      // do something with the answer
+      triggers.eq(1).html(input);
+ 
+      // do not submit the form
+      return e.preventDefault();
+  });
+</script>
+<script type = "text/javascript">
+// validator. we use custom message layout with a CSS arrow
+    $("#myform").validator({
+    message: '<div><em/></div>',
+    position: 'top left',
+    offset: [3, 40]
+    });
+ 
+    // dateinput and it's configuration
+    $(":date").dateinput({ trigger: true, format: 'dddd mmm yyyy', offset: [2, 0] });
+ 
+    // rangeinput with default configuration
+    $(":range").rangeinput();
+ 
+    // overlay with masking. when overlay is loaded or closed we hide error messages if needed
+    $("#see").overlay({mask: '#999', fixed: false}).bind("onBeforeClose", function(e) {
+    $(".error").hide();
+    });
+ 
+    // tabs. possible error messages are visible only on the first tab pane
+    $("#navi").tabs(".pane").bind("onClick", function(e, index) {
+    $(".error").toggle(!index);
+    });
+</script> --->

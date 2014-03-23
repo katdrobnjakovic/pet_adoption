@@ -82,24 +82,73 @@ body {
 		font-size: 20px;
 		font-weight: bold;
 		text-align: left;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
 	}
 	h2 {
 		margin-top:10px;
 		font-size: 15px;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
 
 	}
 	h3 {
 		margin-top: 0;
 		font-size: 15px;
 		text-align: center;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
 	}
 
 
 
 }
+/* CSS3 border radius for various elements. yea - CSS isn't perfect */
+.rounded, #sheet input, .error {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -khtml-border-radius: 5px;
+}
+ 
+/* validation error message */
+.error {
+  background-color:#E8FF6D;
+  padding:4px;
+  -webkit-box-shadow: #000 0 0 12px;
+  -moz-box-shadow: #000 0 0 12px;
+}
+ 
+/* nested arrow inside error message. It's 100% CSS. No images. */
+.error em {
+  border:10px solid;
+  border-color:#E8FF6D transparent transparent;
+  bottom:-17px;
+  display:block;
+  height:0;
+  left:10px;
+  position:absolute;
+  width:0;
+}
+ 
+/* input field that caused validation error */
+.invalid {
+  background-color:rgba(221, 233, 255, 0.898) !important;
+}
+/* footer */
 
+#footer {
+  width: 980px;
+  margin: 0px auto;
+  background-color: white;
+  color: black;
+  position: absolute;
+
+}
+
+#footer p{
+  display: inline-block;
+}
 /* Footer Styling */
-.footer {
+/*.footer {
 	background: #aad9a5;
 	position:absolute;
 	color:black;
@@ -107,4 +156,4 @@ body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	bottom: 0;
     width: 100%;
-}
+}*/
