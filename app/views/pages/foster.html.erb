@@ -1,3 +1,35 @@
+<head>
+<style> 
+.subcontent{
+	margin: 0;
+            padding: 0;
+            width:100%;
+            min-height: 300px;
+}
+.policy
+{
+ position: relative;
+            margin-right: 0px;
+            width:49%;
+            float:left;
+            min-height:300px;
+            border:5px outset #3B3835;
+}
+.openings
+{
+ float: right;
+            text-ali9n: left;
+            width: 49%;
+            min-height:300px;
+            float:right;
+            border:5px inset #3B3835;
+
+}
+
+
+</style>
+</head>
+
 <h2><%= "Welcome to the foster page!"%></h2>
 
 <p>
@@ -5,16 +37,43 @@
 	<br>
 	<%= link_to image_tag("Order_form.png", :size => "45x60"), "http://www.google.com"%>
 	<br>
-	Foster Application Form
+	<%= link_to "Foster Application Form", "http://www.google.com", class: "reg-link"%>
 	<br>
 	<br>
-	Definition of Fostering:
+	Definition of Fostering: ____________________________________________
 	<br>
 	<br>
-	Policies...
-	<br>
-	<br>
-	Openings...
+	<div class ="subcontent">
+	<div class = "policy" style ="float:left">
+		<br>
+		Policies...
+		<br>
+		<ul>
+		<li> ______________________________________ </li>
+		<li> ______________________________________ </li>
+		<li> ______________________________________ </li>
+		<li> ______________________________________ </li>
+		<li> ______________________________________ </li>
+		<li> ______________________________________ </li>
+		<li> ______________________________________ </li>
+	</ul>
+	</div>
+	<div class = "openings" style="float:right">
+		<br>
+		Duties of fosterers...
+		<br>
+		<ul>
+		<li> _______________</li>
+		<li> _______________</li>
+		<li> _______________</li>
+		<li> _______________</li>
+		<li> _______________</li>
+		<li> _______________</li>
+		<li> _______________</li>
+		<br>
+	</ul>
+	</div>
+</div>
 	<br>
 	<br>
 	<%= "...or " %>
