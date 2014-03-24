@@ -69,10 +69,10 @@
             <br>
 
             <% if admin? %>
-               <%= link_to "Edit Animal Post", edit_animal_post_path(animal_post), class: "reg-link"  %>
+               <%= link_to "Edit Animal Post", edit_animal_post_path(animal_post), class: "admin-link"  %>
                <br>
                  <%= link_to "Remove Animal Post",                       
-                    animal_post, class: "reg-link" , method: :delete,  
+                    animal_post, class: "admin-link" , method: :delete,  
                         confirm: "Are you sure you want to delete this animal post? " %>
                     <!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
             <% end %>
