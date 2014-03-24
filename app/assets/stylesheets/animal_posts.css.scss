@@ -6,7 +6,7 @@
 
 /*Define accordion box*/
 .accordion{
-	width:830px;
+	width:100%;
 	overflow:hidden;
 	margin:0 0;
 	background:#414141; 
@@ -73,7 +73,7 @@ background:#bdd9e3;
 	padding:0px 3px;
 }
 .accordion section h2 a b{
-	width: 150px;
+	width: 20%;
 	font-weight: normal;
 	display:inline-table;
 	vertical-align: middle;
@@ -107,7 +107,3 @@ background:#bdd9e3;
       left:810px;
 }
 
-/*Set position of the number on the slide*/  
-.vertical section:target:after{ 
-     left:-9999px;
-}
