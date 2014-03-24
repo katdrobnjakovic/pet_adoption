@@ -30,7 +30,7 @@ PetAdoption::Application.configure do
 
   
   #SMTP GMail Settings
-  config.action_mailer.default_url_options = { :host => 'pet-adoption.herokuapp.com'}
+  config.action_mailer.default_url_options = { :host => 'pet-adoption.heroku.com'}
 
   config.action_mailer.delivery_method = :smtp
 
