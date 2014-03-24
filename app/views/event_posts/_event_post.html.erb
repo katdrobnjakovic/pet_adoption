@@ -1,10 +1,30 @@
-<li>
-    <%= link_to event_post.title, event_post %>
-    <% if admin? %>
-        <%= link_to "destroy",                       
-                event_post, method: :delete,  
-                confirm: "Are you sure you want to delete this news post? " %>
-                <!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
-    <%end %>
 
-</li>
+<div class ="event-post">
+
+<%# Add each animal to the accordion table /#%>
+
+    <section id="<%= event_post.id %>">
+        <h2>  <a href="#<%= event_post.id %>" > 
+
+                            <%= event_post.title %>
+                        </a>
+                        
+        </h2>   
+        <p>
+            <%= simple_format( event_post.description) %><br>
+            <br>
+            <br>
+
+            <% if admin? %>
+               <%= link_to "Edit Event Post", edit_event_post_path(event_post), class: "reg-link"  %>
+               <br>
+                 <%= link_to "Remove Event Post",                       
+                    event_post, class: "reg-link" , method: :delete,  
+                        confirm: "Are you sure you want to delete this event post? " %>
+                    <!-- this is a get resquest, add the argument call method to deal with delete (on surface a get but rails treats this as delete)--> <!-- "#" use a # as a dummy link-->
+            <% end %>
+            
+        </p>  
+    </section> 
+</div>
+

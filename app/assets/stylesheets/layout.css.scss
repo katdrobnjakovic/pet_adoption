@@ -2,14 +2,12 @@
 body {
 
 	margin: 0; /*default rails padding around border*/
-	background-image: url('paw_pattern.png');
-	background-size: auto;
+	background: #bdd9e3;
 }
 
 .container {
 
 	width:960px;
-
 	
 	/*margin:0 auto 0 auto; specify all four arguments at once*/
 	margin: 0 auto; /*specify top and bottom and then right and left - allows to center the container*/
@@ -21,7 +19,7 @@ body {
 /* Header Styling */
 .header {
 	width: 100%;
-	background: #9E8F8B;
+	background: #aad9a5;
 	color:black;
 	font-size: 24px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -67,39 +65,30 @@ body {
 
 /* Content Styling */
 .content {
-	background: #aaaaaa;
+background-image:url("wallpaper-blue1.png");
+	//background: #bdd9e3;
 	padding: 60px;
-	width: 960px;
-	height: 100%;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 25px;
-	padding-bottom: auto;
+	height: auto;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	h1 {
 		margin-top: 0;
-		font-size: 20px;
-		font-weight: bold;
-		text-align: left;
-		font-family: "Trebuchet MS", Helvetica, sans-serif;
-	}
-	h2 {
-		margin-top:10px;
-		font-size: 15px;
-		font-family: "Trebuchet MS", Helvetica, sans-serif;
-
 	}
 	h3 {
-		margin-top: 0;
-		font-size: 15px;
-		text-align: center;
-		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		margin: 0;
 	}
 
-
-
 }
+
+/* Footer Styling */
+.footer {
+	background: #aad9a5;
+	color:black;
+	text-align: right;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	bottom: 0;
+    width: 100%;
+}
+
 /* CSS3 border radius for various elements. yea - CSS isn't perfect */
 .rounded, #sheet input, .error {
   border-radius: 5px;
@@ -133,16 +122,7 @@ body {
 .invalid {
   background-color:rgba(221, 233, 255, 0.898) !important;
 }
-/* footer */
 
-#footer {
-  width: 980px;
-  margin: 0px auto;
-  background-color: white;
-  color: black;
-  position: absolute;
-
-}
 
 #footer p{
   display: inline-block;
