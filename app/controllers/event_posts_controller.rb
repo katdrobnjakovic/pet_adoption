@@ -50,7 +50,7 @@ before_action :deny_access_for_non_admins, except: [:index, :show]
   private
 
     def event_post_params
-      params.require(:event_post).permit(:title, :description) #sanitizes the hash
+      params.require(:event_post).permit(:title, :date, :location, :description) #sanitizes the hash
     end
 
 
