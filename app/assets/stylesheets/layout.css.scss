@@ -104,8 +104,10 @@ body {
 }
 
 /* Footer Styling */
-.footer {
-	background-color: #8A3443;
+#footer {
+	background: #752A37;
+	overflow: hidden;
+	clear:both;
 	background-position: absolute;
 	color:black;
 	text-align: right;
@@ -149,11 +151,12 @@ body {
 
 
 #footer p{
+	background: #752A37;
   display: inline-block;
 }
 /* Footer Styling */
 /*.footer {
-	background: #aad9a5;
+	background: #8A3443;
 	position:absolute;
 	color:black;
 	text-align: right;
