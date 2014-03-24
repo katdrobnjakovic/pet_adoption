@@ -1,18 +1,18 @@
 /* Layout Styling */
-body {
+div{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
 
+
+body {
 	margin: 0; /*default rails padding around border*/
 	background: #bdd9e3;
 }
 
 .container {
-
 	width:960px;
-	
 	/*margin:0 auto 0 auto; specify all four arguments at once*/
-	margin: 0 auto; /*specify top and bottom and then right and left - allows to center the container*/
-
-	
+	margin: 0 auto; /*specify top and bottom and then right and left - allows to center the container*/	
 }
 
 
@@ -28,7 +28,6 @@ body {
 }
 
 /* Navigation Styling */
-
 .navbar-fixed {
     top: 0;
     z-index: 100;
@@ -47,7 +46,6 @@ body {
 .navigation {
 	width: 100%;
 	background: #548c9c;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	text-align: center;
 }
 
@@ -85,7 +83,6 @@ background-image:url("wallpaper-blue1.png");
 	//background: #bdd9e3;
 	padding: 60px;
 	height: auto;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	h1 {
 		margin-top: 0;
 	}
@@ -100,7 +97,6 @@ background-image:url("wallpaper-blue1.png");
 	background: #aad9a5;
 	color:black;
 	text-align: right;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	bottom: 0;
     width: 100%;
 }
@@ -149,7 +145,6 @@ background-image:url("wallpaper-blue1.png");
 	position:absolute;
 	color:black;
 	text-align: right;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	bottom: 0;
     width: 100%;
 }*/
