@@ -31,7 +31,6 @@ body {
 	color:black;
 	font-size: 24px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	padding: 20px;
 	text-align: center;
 }
 
@@ -40,7 +39,7 @@ body {
     top: 0;
     z-index: 100;
   position: fixed;
-    width: 100%;
+    width: auto;
     height: 50px;
 }
 
@@ -49,13 +48,14 @@ body {
 	background: #3B3835;
 	color:white;
     height: 50px;
-    width:100%;
+    width: 100%;
 }
 
 .navigation {
 	width: 100%;
 	background: #752A37;
 	text-align: center;
+	width: 100%;
 }
 
 .nav-link {
