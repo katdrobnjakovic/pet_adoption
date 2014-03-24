@@ -9,6 +9,8 @@ PetAdoption::Application.routes.draw do
   get "/volunteer" => "pages#volunteer"
   get "/foster" => "pages#foster"
   get "/donate" => "pages#donate"
+  get "/about" => "pages#about"
+  post "/about" => "pages#about"
 
   resources :animal_posts
   resources :event_posts

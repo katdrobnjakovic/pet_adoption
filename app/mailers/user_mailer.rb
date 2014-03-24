@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "tutorails.katarina@gmail.com"
 
   def contact_confirmation(email, first_name, last_name, message)
   	@email, @first_name, @last_name, @message = email, first_name, last_name, message
