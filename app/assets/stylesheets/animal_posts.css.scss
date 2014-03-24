@@ -17,12 +17,12 @@
 	float:left;
 	overflow:hidden;
 	cursor:pointer;
-	background: #548c9c;
+	background: #FAEEBE;
 	margin:2px 0px;
 }
 
 .accordion section:hover{
-	background:#444;
+	background:#F09A86;
 }
 
 .accordion section p{
@@ -32,18 +32,18 @@
 .accordion section:after{
 	position:relative;
 	font-size:32px;
-	color:#fff;
+	color:#F09A86;
 	font-weight:bold;
 }
 
 .accordion section:target{
-background:#bdd9e3;
+background:#F09A86;
 padding:12px;
 overflow:auto;
 }
 
 .accordion section:target:hover{
-background:#bdd9e3;
+background:#F09A86;
 padding:12px;
 }
 
@@ -53,8 +53,8 @@ height:80px;
 }
 
 .accordion section:target h2 a{
-color:#548c9c;//color of h2 after expansion
-background:#bdd9e3;
+color:black;//color of h2 after expansion
+background:#F09A86;
 position:static;
 text-decoration:bold;
 font-size: 16px;
@@ -62,13 +62,13 @@ font-size: 16px;
 
 .accordion section:target p{
 display:block;
-background:#bdd9e3;
+background:#F09A86;
 }
 
 .accordion section h2 a{
 	display:block;
 	font-size:16px;
-	color:#cce1d7; //Text color of all the header names
+	color:black; //Text color of all the header names
 	text-decoration:none;
 	padding:0px 3px;
 }
