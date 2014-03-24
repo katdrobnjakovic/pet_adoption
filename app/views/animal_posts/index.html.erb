@@ -1,9 +1,8 @@
 
 
 <html>
-<div class = container>
 <h1>All Animals</h1>
-<!p>
+
 	Welcome to the adopt us section. Here you will find all the animals available for adoption. 
 	<br>
 	<br>
@@ -12,53 +11,10 @@
 
 
  
-<!-- user input dialog -->
-
- 
- 
-
-
-
-<!-- overlay trigger element 
-<a id="formDemo" rel="#sheet"></a> -->
-<!-- the triggers 
-<p>
-  <button class="modalInput" rel="#prompt">Adoption Form</button>
-</p>-->
- 
-<!-- the overlay 
-<div id="sheet" class="rounded"> -->
-
-	<!-- user input dialog 
-<div class="modal" id="prompt">
-  <h2>Adoption Application Form</h2>
- 
-  <p>
-    Please complete the following application if you wish to make an adoption.  
-    If you have any questions or comments please contact us and we will do our best to help you any way we can.
-    Contact us at:
-  </p>-->
- 
- 
-  <!-- the form is on the first tab pane 
-  <div class="pane" id="pane1">
- 
-    <form class="rounded" id="myform">
- 		 <input />
-    <button type="submit"> Submit </button>
-    <button type="button" class="close"> Cancel </button>
-    </form>
-  </div>
-
-</div>
-</div>
-
-
-</p>-->
 <% if admin? %>
 <%= link_to "Add New Animal Posts", new_animal_post_path, class: "reg-link"  %>
 <% end %>
-<ul>
+
 
 	<div class="accordion vertical">
 
@@ -66,8 +22,7 @@
 
 	</div>
 
-</ul>
-</div>
+
 </html>
 <!---
 <script type = "text/javascript">

@@ -5,14 +5,13 @@
 
     <section id="<%= animal_post.id %>">
         <h2>  <a href="#<%= animal_post.id %>"  > 
-                            <! Picture of Animal >
-                            <b style = "padding-left: 3px"> <%= image_tag("#{animal_post.name}.jpg", :size => "100x75")%> </b>
+                            <b > <%= image_tag("#{animal_post.name}.jpg", :size => "100x75")%> </b>
 
-                            <! Name of Animal >
-                            <b style= "font-weight: bold"> <%= animal_post.name %> </b>
                             
-                            <! Age of Animal >
-                            <b>  
+                            <b style= "font-weight: bold;width:15%"> <%= animal_post.name %> </b>
+                            
+                            
+                            <b style="width:15%">  
                                 <% number_of_days = (Date.today - animal_post.birth).to_i %>
                                 <% number_of_years = (number_of_days /360).to_i %>
 
@@ -44,8 +43,8 @@
                                     <% end %>
                                 </b>
 
-                                <! Vaccination of Animal >
-                                <b>  
+                                
+                                <b style="width:15%">  
                                     <% if animal_post.vaccinated == "yes" %>
                                         <%= "Vaccinated" %>
                                     <% else %>
@@ -53,12 +52,12 @@
                                     <% end %>
                                  </b>
 
-                                 <! Fertility of Animal >
-                                <b style="width:170px">  
+                                 
+                                <b style="width:23%">  
                                     <% if animal_post.fertile == "yes" %>
-                                        <%= "Spayed / Neutered" %>
+                                        <%= "Spayed/Neutered" %>
                                     <% else %>
-                                        <%= "Not Spayed / Neutered" %>
+                                        <%= "Not Spayed/Neutered" %>
                                     <% end %> 
                                 </b>
                         </a>
