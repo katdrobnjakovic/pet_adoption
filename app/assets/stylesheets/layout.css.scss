@@ -9,6 +9,9 @@ body {
 	background: #bdd9e3;
 	background-image: url('/assets/bambo.png');
 	background-size: 100%;
+	h4 {
+		font-size: 37px;
+	}
 }
 
 .container {
@@ -99,6 +102,10 @@ body {
 	height: auto;
 	h1 {
 		margin-top: 0;
+		text-align: center;
+	}
+	h2 {
+
 	}
 	h3 {
 		margin: 0;
