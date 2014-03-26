@@ -6,9 +6,10 @@ div{
 
 body {
 	margin: 0 ; /*default rails padding around border*/
-	background: #bdd9e3;
+	background: #F09A86;
 	background-image: image-url('bambo.png');
-	background-size: 100%;
+	background-size: cover;
+	background-repeat:no-repeat;
 	h4 {
 		font-size: 37px;
 		margin:0 0;
