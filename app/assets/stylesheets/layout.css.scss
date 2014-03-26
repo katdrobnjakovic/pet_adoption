@@ -131,10 +131,10 @@ body {
 	overflow: hidden;
 	clear:both;
 	background-position: absolute;
-	color:black;
 	text-align: right;
 	bottom: 0;
     width: 100%;
+    color:white;
 }
 
 /* CSS3 border radius for various elements. yea - CSS isn't perfect */
@@ -175,6 +175,7 @@ body {
 #footer p{
 	background: #752A37;
   display: inline-block;
+  color:white;
 }
 /* Footer Styling */
 /*.footer {
